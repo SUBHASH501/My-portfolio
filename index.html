@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myprotfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    <link rel = "shortcut icon" href ="logo.ico"  type = "image/x-icon"> 
+    <script src="https://kit.fontawesome.com/d3c504317a.js" crossorigin="anonymous"></script>
+    <style>
+        *
+        {
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        
+        
+       .navbar
+        {
+            background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+        
+        
+        }
+       .navbar ul{
+           overflow:auto;
+        
+       }
+       .navbar li a:hover{
+           color:rgb(46, 54, 49);
+       }
+       .responsive-image {
+        width:300 ;
+        height:300;
+        margin-top: 50px;
+        border-color: antiquewhite;
+        border-width: 5px;
+        border-style:solid;
+        border-radius: 500px;
+        float: center;
+        margin-left: 40%;
+         }
+
+       .navbar li  a{
+           /*padding:5px 5px;*/
+           text-decoration: none;
+           color:white;
+
+       }
+       .navbar li{
+           float:left;
+           list-style: none;/*for removing bullets*/
+           margin:13px 20px;
+           padding-top: 5px;
+        
+
+       }
+      .me
+      {
+          color:white;
+          margin-left:42%;
+          padding:30px;
+      }
+
+       .introduction
+       {   color:whitesmoke;
+           text-align:justify;
+           font-size: larger;
+           font-weight: bolder;
+           font-family: 'Roboto Slab', serif;
+           float:right;
+           /* width:70%; */
+           /* margin-top: px; */
+           margin-left: 20px;;
+           margin-right: 30px;
+           display:inline-block;
+
+           
+       }
+       #footer
+       {     
+           background:black;
+           color:white;
+           text-align:center;
+           bottom:0;
+        
+           width:100%;
+           text-align: center;
+       }
+       .some 
+        { 
+           padding:25px;
+           display: inline-block;
+           background:url(picture.jpg);
+           background-repeat:no-repeat;
+           background-size:100% 100%;
+           background-position:initial;
+            height: 600px; 
+         }
+       .header
+       {
+           position: fixed;
+           width:100%;
+       }
+      .rounded-circle
+      {
+          
+          margin-top:5px;
+          margin:15px;
+      }
+      .heading
+      {
+          display:block;
+          text-align: center;
+          font-family: 'Roboto Slab', serif;
+        }
+
+      .name
+        {
+            display:block;
+            font-family: 'Roboto Slab', serif;
+
+
+
+        }
+       
+    .Certificate
+    {
+        font-family:'Roboto Slab', serif;
+        margin-left:10%;
+    }   
+     .contact-link 
+     {   
+         
+        
+         text-decoration: none;
+         /* padding-top:500px; */
+         /* padding:100px;  */
+         width:20%;
+         display:inline-block;
+         margin-left:60px;;
+         box-sizing: border-box;
+     }
+
+     .contact-background
+     {
+         background-color: blue;;
+     }
+     a
+     {
+         color:black;
+         text-decoration: none;
+     }
+    a:hover
+     {
+         color:black;
+     }
+
+     .pro
+     {
+        font-family:'Roboto Slab', serif;
+        height:100px;
+        margin-left: 10%;
+}
+    </style>
+</head>
+<body >
+    <header class="header">
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="certificate.html">Certificate</a></li>
+                <li><a href="#contact">Contact </a></li>
+               
+            </ul>
+        </nav>
+    </header>
+
+    <div class="some">
+
+        <img src="ishwar2.jpg" alt="picture is loading"  class="responsive-image" width="300" height="300" > 
+
+        <h1 class="me">About me!</h1>  
+        <p class="introduction">Hello !
+             My name is Subhash Kumar. I am currently pursuing BTech (Bachelor of Technology) in CSE (2nd year) from Lovely Professional University, Phagwara, Punjab. 
+            I have keen interest in web development. I am an active member of LPU's student organisation, UNYC. I am also interested in AI/ML. 
+            My aim in life is to follow my passion and become financially independent. 
+            Apart from academics, I love travelling and exploring new places.</p> 
+             
+    </div>
+    <!--
+    <hr>
+    <div>
+    <h3 class="heading" id="skill">Skills</h3>
+    <div class="skills-logo">
+        <img class="rounded-circle" src="c++img.png" width="140" height="140">
+        <img class="rounded-circle" src="htmlpic.png" width="140" height="140">
+        <img class="rounded-circle" src="csspic.png" width="140" height="140">
+         <img class="rounded-circle" src="jspic.webp" width="140" height="140">
+         <img class="rounded-circle" src="pythonpic.png" width="140" height="140">
+        <img class="rounded-circle" src="djangopic.png" width="140" height="140">
+         <img class="rounded-circle" src="javapic.png" width="140" height="140">
+
+     </div>
+     <hr>
+     <div>
+         <h3 class="heading" id="project">Project</h3>
+         <ul class="pro">
+             <li><a href="Typing Speed.html">Typing Speed Test</a></li>
+             <li><a href="dreamstore.html" >Online Shopping website</a></li>
+         </ul>
+         <hr>
+     </div>
+  <h3 class="heading" id="certification">Certification</h3>
+  <ol style="list-style-type: decimal">
+  <li class="Certificate">Python Data Structures</li>
+  <li class="Certificate">Advanced Styling with Responsive Design</li>
+  <li class="Certificate">Interactivity with JavaScript</li>
+  <li class="Certificate">Introduction to CSS3</li>
+  <li class="Certificate">Introduction to HTML5</li>
+  <li class="Certificate">Programming Foundations with JavaScript,HTML and CSS</li>
+  </ol>
+  <hr>
+-->
+<div class="contact-background">
+  <h3 class="heading" id="contact">Contact</h3>
+  <div class="contact-link">
+  <a href="mailto:subhashishwar001@gmail.com" target="_blank"><i class="fas fa-envelope fa-5x"></i></a>
+  <p class="source">Email</p></div>
+  <div class="contact-link">
+  <a href="https://github.com/SUBHASH501"  target="_blank"><i class="fab fa-github fa-5x"></i></a>
+ <p class="source">Git hub</div>
+  <div class="contact-link">
+  <a href="https://www.linkedin.com/in/subhashkumar501" target="_blank"><i class="fab fa-linkedin fa-5x"></i></a>
+<p class="source">Linkedin</p></div>
+  <div class="contact-link">
+  <a href="https://twitter.com/Subhashishwar1?s=09" target="_blank" ><i class="fab fa-twitter-square fa-5x"></i></a>
+<p class="source">Twitter</p></div>
+  </div>
+</div>
+
+    <footer id="footer">
+        <div >
+            <p>Copyright&copy;:Subhash2021</p>
+        </div>
+    </footer>
+
+</body>
+</html>
